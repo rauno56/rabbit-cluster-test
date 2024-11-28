@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo Primary:
+docker network inspect primary | jq -r '.[].Containers | to_entries[] | .value.Name' | rg rabbit | sort
+
+echo
+echo Secondary:
+docker network inspect secondary | jq -r '.[].Containers | to_entries[] | .value.Name' | rg rabbit | sort

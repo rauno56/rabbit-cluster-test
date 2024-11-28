@@ -1,0 +1,8 @@
+#!/bin/bash
+
+DIR=`dirname $0`
+
+docker network connect primary cl-rabbit-1-1
+docker network disconnect secondary cl-rabbit-1-1
+
+$DIR/show-networks

@@ -1,0 +1,10 @@
+*
+!*/
+
+!/s/partition-*
+!/s/show-*
+!.gitignore
+!rabbit.cluster.conf
+!.env
+!docker-compose.yml
+!Dockerfile
